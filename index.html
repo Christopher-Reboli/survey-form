@@ -1,35 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Please take the time to give us your feedback!</p>
+    <p id="description">Please take some time to fill out our survey!</p>
     <form id="survey-form">
-        <fieldset>
-            <label id="name-label">Enter your Name* <input type="text" id="name" placeholder="Bigus Dickus" required></label>
-            <label id="email-label">Enter your E-mail* <input type="email" id="email" placeholder="bigus-dickus@example.com" required></label>
-            <label id="number-label">Enter a Number <input type="number" id="number" placeholder="15" min="10" max="20"></label>
-            <select id="dropdown">
-                <option value="">Option #1</option>
-                <option value="1">Option #2</option>
-            </select>
-            <label><input type="radio" name="radio-option" value="radio-option" class="inline">Radio Button #1</label>
-            <label><input type="radio" name="radio-option" value="radio-option" class="inline">Radio Button #2</label>
-            <label><input type="checkbox" value="checkbox-1" class="inline">Checkbox #1</label>
-            <label><input type="checkbox" value="checkbox-2" class="inline">Checkbox #2</label>
-            <label><input type="checkbox" value="checkbox-3" class="inline">Checkbox #3</label>
-            <label><input type="checkbox" value="checkbox-4" class="inline">Checkbox #4</label>
-            <label><input type="checkbox" value="checkbox-5" class="inline">Checkbox #5</label>
-            <label><input type="checkbox" value="checkbox-6" class="inline">Checkbox #6</label>
-            <textarea id="textarea" cols="30" rows="3"></textarea>
-            <input type="submit" id="submit" value="Submit">
-        </fieldset>
+      <fieldset>
+        <label id="name-label"
+          >Full Name*
+          <input type="text" id="name" placeholder="Bigus Dickus" required />
+        </label>
+        <label id="email-label"
+          >E-mail address*
+          <input
+            type="email"
+            id="email"
+            placeholder="bigus-dickus@example.com"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Age
+          <input type="number" id="number" placeholder="15" min="0" max="200" />
+        </label>
+        <div class="divider"></div>
+        Do you play Fighting Games?
+        <label>
+          <input
+            type="radio"
+            name="radio-option"
+            value="radio-option"
+            class="inline"
+          />Yes
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="radio-option"
+            value="radio-option"
+            class="inline"
+          />No
+        </label>
+        <div class="divider"></div>
+        <label for=""
+          >Do you pick characters based on Tier Lists?
+          <select id="dropdown">
+            <option value="">Please choose an option</option>
+            <option value="1">I play Top Tiers</option>
+            <option value="2">I play Mid Tiers</option>
+            <option value="3">I play Low Tiers</option>
+            <option value="4">I don't care about Tiers</option>
+          </select>
+        </label>
+        <div class="divider"></div>
+        What do you look for in a character?
+        <label>
+          <input type="checkbox" value="checkbox-1" class="inline" />Good
+          Normals
+        </label>
+        <label>
+          <input type="checkbox" value="checkbox-2" class="inline" />Fireballs
+        </label>
+        <label>
+          <input type="checkbox" value="checkbox-3" class="inline" />Invincible
+          Reversal
+        </label>
+        <label>
+          <input type="checkbox" value="checkbox-4" class="inline" />Command
+          Grabs
+        </label>
+        <label>
+          <input type="checkbox" value="checkbox-5" class="inline" />High
+          Mobility
+        </label>
+        <label>
+          <input type="checkbox" value="checkbox-6" class="inline" />Strong
+          Okizeme
+        </label>
+        <div class="divider"></div>
+        <label
+          >Please use the space below if you want to say something:
+          <textarea id="textarea" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit" />
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
